@@ -5,17 +5,303 @@ Version: 6.1
 
 Initializing the Simulation Class...
 	Case Dir: C:\Users\jguerrero\Documents\GitHub\eWave_2.0 
-{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bodyClass/checkInputs')" style="font-weight:bold">bodyClass/checkInputs</a>
-The hdf5 file
-../hydroData/wavestar.h5 does not
-exist
+Elapsed time is 0.727694 seconds.
 
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('initializeWecSim', 'C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\functions\initializeWecSim.m', 165)" style="font-weight:bold">initializeWecSim</a> (<a href="matlab: opentoline('C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\functions\initializeWecSim.m',165,0)">line 165</a>)
-        body(ii).checkInputs(simu.explorer, simu.stateSpace, simu.FIR, waves(kk).typeNum);
+WEC-Sim Pre-processing ...   
+Elapsed time is 0.864281 seconds.
 
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2023b\toolbox\matlab\lang\run.m', 99)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023b\toolbox\matlab\lang\run.m',99,0)">line 99</a>)
-evalin('caller', strcat(script, ';'));
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 225
+	Time Step Size                 (sec) = 0.05
+	Ramp Function Time             (sec) = 25
+	Convolution Integral Interval  (sec) = 2
+	 Number of Time Steps     = 4500 
 
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\wecSim.m', 40)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\wecSim.m',40,0)">line 40</a>)
-run('initializeWecSim');
+Wave Environment: 
+	Wave Type                            = Irregular Waves (Predefined Random Phase)
+	Spectrum Type                        = JONSWAP 
+	Significant Wave Height, Hs      (m) = 0.1042
+	Peak Wave Period, Tp           (sec) = 1.836
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: Float *****
+	Body CG                          (m) = [0.0511,0,0.0533]
+	Body Mass                       (kg) = 3.075 
+	Body Moments of Inertia       (kgm2) = [0,0.00145,0]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 0
+
+List of Constraint(s): Number of Constraints = 5 
+
+	***** Constraint Name: Arm-Float *****
+
+	***** Constraint Name: A *****
+
+	***** Constraint Name: B *****
+
+	***** Constraint Name: C *****
+
+	***** Constraint Name: Fixed *****
+
+
+Simulating the WEC device defined in the SimMechanics model C:\Users\jguerrero\Documents\GitHub\eWave_2.0\WaveStar.slx...   
+Elapsed time is 18.316597 seconds.
+[Warning: Using find_system without
+the 'Variants' argument skips
+inactive Variant Subsystem blocks in
+the search. This behavior will
+change in a future release to look
+at all choices of the Variant
+Subsystem. To find blocks that are
+active in simulation or code
+generation, compile the model and
+use the built-in variant filters
+with the 'MatchFilter' option. To
+find all blocks use filter
+'@Simulink.match.allVariants' with
+the 'MatchFilter' option.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('inputOrCustomCallback', 'C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\functions\simulink\mask\inputOrCustomCallback.m', 31)" style="font-weight:bold">inputOrCustomCallback</a> (<a href="matlab: opentoline('C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\functions\simulink\mask\inputOrCustomCallback.m',31,0)">line 31</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\wecSim.m', 43)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\wecSim.m',43,0)">line 43</a>)] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+Error due to multiple causes.
+Caused by:
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        External Force
+        and Torque block (mask) does not
+        have a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        External Force
+        and Torque block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Transform
+        Sensor block (mask) does not have a
+        parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Transform
+        Sensor block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) does not have
+        a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) does not have
+        a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        World Frame block (mask) does not
+        have a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        World Frame block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        External Force
+        and Torque block (mask) does not
+        have a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        External Force
+        and Torque block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Transform
+        Sensor block (mask) does not have a
+        parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Transform
+        Sensor block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) does not have
+        a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) does not have
+        a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        World Frame block (mask) does not
+        have a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        World Frame block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        External Force
+        and Torque block (mask) does not
+        have a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        External Force
+        and Torque block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Transform
+        Sensor block (mask) does not have a
+        parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Transform
+        Sensor block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) does not have
+        a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) does not have
+        a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        World Frame block (mask) does not
+        have a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        World Frame block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        External Force
+        and Torque block (mask) does not
+        have a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        External Force
+        and Torque block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Transform
+        Sensor block (mask) does not have a
+        parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Transform
+        Sensor block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) does not have
+        a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) does not have
+        a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        Rigid
+        Transform block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+    Error due to multiple causes.
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        World Frame block (mask) does not
+        have a parameter named
+        'SimscapeInstrumentationLogging'
+        Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim')" style="font-weight:bold">wecSim</a>
+        World Frame block (mask) parameter
+        'SimscapeInstrumentationLogging' is
+        read-only
 } 
