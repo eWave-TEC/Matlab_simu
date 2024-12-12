@@ -1,0 +1,21 @@
+
+WEC-Sim Input From Standard wecSimInputFile.m Of Case Directory... 
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 6.1
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\jguerrero\Documents\GitHub\eWave_2.0 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bodyClass/checkInputs')" style="font-weight:bold">bodyClass/checkInputs</a>
+The hdf5 file
+../hydroData/wavestar.h5 does not
+exist
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('initializeWecSim', 'C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\functions\initializeWecSim.m', 165)" style="font-weight:bold">initializeWecSim</a> (<a href="matlab: opentoline('C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\functions\initializeWecSim.m',165,0)">line 165</a>)
+        body(ii).checkInputs(simu.explorer, simu.stateSpace, simu.FIR, waves(kk).typeNum);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2023b\toolbox\matlab\lang\run.m', 99)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023b\toolbox\matlab\lang\run.m',99,0)">line 99</a>)
+evalin('caller', strcat(script, ';'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\wecSim.m', 40)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\wecSim.m',40,0)">line 40</a>)
+run('initializeWecSim');
+} 
