@@ -51,7 +51,7 @@ HPfreq.vel = fix;                         % High pass cut off freq in velocity f
 
 %% %%%%%%%%% Controller information    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Select the controller to be used in the simulation:
-controllerType  = 2;                  % 1 for Resistive controller ---> Proportional to the arm angular velocity.
+controllerType  = 1;                  % 1 for Resistive controller ---> Proportional to the arm angular velocity.
                                       % 2 for NMPC Controller      ---> Non-linear predictive control
 % Time after which the controller strategy starts to work, [seconds]
 startController = 15;                     
@@ -76,6 +76,8 @@ switch(SeaState)
     case 5         
         Np = 30;    prop_gain = 12.50;  load('waveData/SS5_excM_stored.mat'); 
     case 6         
+        Np = 40;    prop_gain = 19.40;  load('waveData/SS6_excM_stored.mat'); 
+    case 7         
         Np = 40;    prop_gain = 19.40;  load('waveData/SS6_excM_stored.mat'); 
 end 
 
