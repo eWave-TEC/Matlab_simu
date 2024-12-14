@@ -80,6 +80,8 @@ switch(SeaState)
     case 7         
         Np = 40;    prop_gain = 19.40;  load('waveData/SS6_excM_stored.mat'); 
 end 
+% excmoment for SS7 has to be computed
+
 
 excM_precalculated  = excM_stored;         % Precalculated excitation moment. Used for prediction type 1
 qnl                 = [ 0, 1; 1, 0 ];      % Matrix used to compute the product \dtheta x control_input ( Eq.(19) from Paper)
