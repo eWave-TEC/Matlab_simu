@@ -24,7 +24,7 @@ simu = simulationClass();                           % Create the Simulation Vari
         case { 7 };           simu.endTime        = 250 + simu.rampTime;
     end
     simu.cicEndTime     = 2;                        % Convolution Time [s]
-    simu.explorer       = 'off';                    % Explorer on
+    simu.explorer       = 'on';                    % Explorer on
     simu.solver         = 'ode8';                   % Turn on ode45
     simu.domainSize     = 5;
     simu.stateSpace 	= 1;                        % Simulate Impulse Response Function with State Space Approximation
@@ -71,15 +71,15 @@ simu = simulationClass();                           % Create the Simulation Vari
 
 %% Body Class
 %%%%%%%%%%%%%%%%%%% Float - 3 DOF   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-body(1) = bodyClass('hydroData/wavestar.h5');       % Initialize bodyClass
+body(1) = bodyClass('./hydroData/wavestar.h5');       % Initialize bodyClass
     body(1).mass                = 3.075;            % Define mass [kg]   
     body(1).inertia             = [0 0.001450 0];   % Moment of Inertia [kg*m^2]     
-    body(1).geometryFile        = '../geometry/Float.stl'; % Geometry File
+    body(1).geometryFile        = './geometry/Float.stl'; % Geometry File
     body(1).linearDamping       = zeros(6);         % Linear Viscous Drag Coefficient
     body(1).linearDamping(5,5)  = 1.8;              % Linear Viscous Drag Coefficient, determined From Experimetnal Tests
 %%%%%%%%%%%%%%%%%%% Arm - Rotates   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 body(2) = bodyClass('');                            % Initialize bodyClass
-    body(2).geometryFile    = 'geometry/Arm.stl';   % Geometry File
+    body(2).geometryFile    = './geometry/Arm.stl';   % Geometry File
     body(2).nonHydro        = 1;                    % Turn non-hydro body on
     body(2).name            = 'Arm';                % Specify body name
     body(2).mass            = 1.157;                % Define mass [kg]   
@@ -90,7 +90,7 @@ body(2) = bodyClass('');                            % Initialize bodyClass
     
 %%%%%%%%%%%%%%%%%%% Frame - FIXED   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 body(3) = bodyClass('');                            % Initialize bodyClass
-    body(3).geometryFile    = 'geometry/Frame.stl'; % Geometry File
+    body(3).geometryFile    = './geometry/Frame.stl'; % Geometry File
     body(3).nonHydro        = 1;                    % Turn non-hydro body on
     body(3).name            = 'Frame';              % Specify body name
     body(3).mass            = 999;                  % Define mass [kg] - FIXED  
@@ -103,7 +103,7 @@ body(3) = bodyClass('');                            % Initialize bodyClass
 
 %%%%%%%%%%%%%%%%%%% BC Rod - TRANSLATE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 body(4) = bodyClass('');                            % Initialize bodyClass
-    body(4).geometryFile    = 'geometry/BC.stl';    % Geometry File
+    body(4).geometryFile    = './geometry/BC.stl';    % Geometry File
     body(4).nonHydro        = 1;                    % Turn non-hydro body on
     body(4).name            = 'BC';                 % Specify body name
     body(4).mass            = 0.0001;               % Define mass [kg]   
@@ -114,7 +114,7 @@ body(4) = bodyClass('');                            % Initialize bodyClass
     
 %%%%%%%%%%%%%%%%%%% Motor - ROTATE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 body(5) = bodyClass('');                            % Initialize bodyClass
-    body(5).geometryFile    = 'geometry/Motor.stl'; % Geometry File
+    body(5).geometryFile    = './geometry/Motor.stl'; % Geometry File
     body(5).nonHydro        = 1;                    % Turn non-hydro body on
     body(5).name            = 'Motor';              % Specify body name
     body(5).mass            = 0.0001;               % Define mass [kg]   
