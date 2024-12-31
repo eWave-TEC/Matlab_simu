@@ -3,6 +3,14 @@ close all; clc;
 % Clear persistent variables defined in: extractedPower, NMPC, observer_kf, and predictor.
 clear extractedPower NMPC observer_kf predictor;  
 
+% Definir el rango de valores para prop_gain si se ejecuta en MCR
+if exist('mcr', 'var') && isfield(mcr, 'controller_init.prop_gain')
+    prop_gain = mcr.controller_init.prop_gain; % Valor asignado por MCR
+else
+    prop_gain = 19.40; % Valor por defecto en caso de ejecución normal
+end
+
+
 %% %%% Model Parameters to build the Continous Matrices Ac, Bc and Cc for the Anaylisis of the WEC System
 a_CAB_neutral   = 1.170165;               % Angle CAB at equilibrium position
 L_AB            = 0.412;                  % Distance AB [m]
@@ -118,4 +126,4 @@ ARtrainingSet   = 10;                     % Number of past values to compute the
 %%%%%%%%%%%  Clear Variables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear Ac Bc Cc Dc sysC sysD Qp Qv QradM QexcM Rp Rv
 
-noe
+

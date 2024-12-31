@@ -149,4 +149,16 @@ pto(1) = ptoClass('PTO');                           % Initialize ptoClass
 %%%%%%%%%%%%%%%%%%% Frame - Fixed    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 constraint(5) = constraintClass('Fixed');           % Initialize constraintClass
     constraint(5).location = [-0.438 0 1.5];        % Constraint Location [m]
+
+% Configurar el rango de valores para prop_gain
+prop_gain_values = 1:0.01:50;
+
+% Configurar el MCR
+mcr.header = {'controller_init.prop_gain'}; % Nombre del parámetro a variar
+mcr.cases = num2cell(prop_gain_values);    % Valores que prop_gain tomará
+
+
+
+set(0, 'DefaultFigureVisible', 'off'); % Desactiva la visualización de figuras
+
     
