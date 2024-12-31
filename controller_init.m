@@ -118,4 +118,4 @@ ARtrainingSet   = 10;                     % Number of past values to compute the
 %%%%%%%%%%%  Clear Variables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear Ac Bc Cc Dc sysC sysD Qp Qv QradM QexcM Rp Rv
 
-noe
+
