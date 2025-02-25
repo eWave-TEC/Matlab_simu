@@ -57,7 +57,7 @@ controllerType  = 1;                  % 1 for Resistive controller ---> Proporti
 startController = 15;                     
 
 % Define the algorithm to use for the excM prediction
-predictionType  = 2;                  % 1 to use the precalculated excM obtained from wecSim.
+predictionType  = 1;                  % 1 to use the precalculated excM obtained from wecSim.
                                       % 2 to use the excM prediction from the AR algorithm. (Used in the Paper)
 % Time after which the controller strategy starts to work, [seconds]
 startPredictor  = 10;                
@@ -74,11 +74,14 @@ switch(SeaState)
     case 4         
         Np = 20;    prop_gain = 6.20;   load('waveData/SS4_excM_stored.mat'); 
     case 5         
-        Np = 30;    prop_gain = 12.50;  load('waveData/SS5_excM_stored.mat'); 
+        Np = 30;    %prop_gain = 12.50;  
+        load('waveData/SS5_excM_stored.mat'); 
     case 6         
-        Np = 40;    prop_gain = 19.40;  load('waveData/SS6_excM_stored.mat'); 
+        Np = 40;    %prop_gain = 19.40;  
+        load('waveData/SS6_excM_stored.mat'); 
     case 7         
-        Np = 40;    prop_gain = 19.40;  load('waveData/SS6_excM_stored.mat'); 
+        Np = 40;    %prop_gain = 29.3;
+        load('waveData/SS6_excM_stored.mat'); 
 end 
 % excmoment for SS7 has to be computed
 

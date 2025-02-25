@@ -1,6 +1,9 @@
 %% WECCCOMP model of WaveStar device with WAMIT data 
 % https://github.com/WEC-Sim/WECCCOMP
 %Select the Sea State to simulate
+
+
+
 SeaState = 7;
 switch(SeaState)
     case 1 ;        Hm0=0.0208;        Tp=0.988;        gamma=1.0;
@@ -21,10 +24,10 @@ simu = simulationClass();                           % Create the Simulation Vari
         case { 1, 4 };        simu.endTime        = 100 + simu.rampTime;
         case { 2, 5 };        simu.endTime        = 150 + simu.rampTime;
         case { 3, 6 };        simu.endTime        = 200 + simu.rampTime;
-        case { 7 };           simu.endTime        = 250 + simu.rampTime;
+        case { 7 };           simu.endTime        = 50 + simu.rampTime;
     end
     simu.cicEndTime     = 2;                        % Convolution Time [s]
-    simu.explorer       = 'on';                    % Explorer on
+    simu.explorer       = 'off';                    % Explorer on
     simu.solver         = 'ode8';                   % Turn on ode45
     simu.domainSize     = 5;
     simu.stateSpace 	= 1;                        % Simulate Impulse Response Function with State Space Approximation
