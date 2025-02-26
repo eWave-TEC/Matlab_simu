@@ -23,8 +23,8 @@ simu = simulationClass();                           % Create the Simulation Vari
     switch(SeaState)
         case { 1, 4 };        simu.endTime        = 100 + simu.rampTime;
         case { 2, 5 };        simu.endTime        = 150 + simu.rampTime;
-        case { 3, 6 };        simu.endTime        = 200 + simu.rampTime;
-        case { 7 };           simu.endTime        = 50 + simu.rampTime;
+        case { 3, 6 };        simu.endTime        = 185 + simu.rampTime;
+        case { 7 };           simu.endTime        = 250 + simu.rampTime;
     end
     simu.cicEndTime     = 2;                        % Convolution Time [s]
     simu.explorer       = 'off';                    % Explorer on

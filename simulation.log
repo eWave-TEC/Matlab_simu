@@ -5,18 +5,18 @@ Version: 6.1
 
 Initializing the Simulation Class...
 	Case Dir: C:\Users\nga20\eWave code\Noe 3 branch 
-Elapsed time is 1.204183 seconds.
+Elapsed time is 1.005787 seconds.
 
 WEC-Sim Pre-processing ...   
-Elapsed time is 0.571558 seconds.
+Elapsed time is 0.551345 seconds.
 
 WEC-Sim Simulation Settings:
 	Start Time                     (sec) = 0
-	End Time                       (sec) = 75
+	End Time                       (sec) = 275
 	Time Step Size                 (sec) = 0.05
 	Ramp Function Time             (sec) = 25
 	Convolution Integral Interval  (sec) = 2
-	 Number of Time Steps     = 1500 
+	 Number of Time Steps     = 5500 
 
 Wave Environment: 
 	Wave Type                            = Irregular Waves (Predefined Random Phase)
@@ -52,19 +52,16 @@ List of Constraint(s): Number of Constraints = 5
 
 
 Simulating the WEC device defined in the SimMechanics model C:\Users\nga20\eWave code\Noe 3 branch\WaveStar.slx...   
-Elapsed time is 0.528418 seconds.
+Elapsed time is 0.491254 seconds.
 [Warning: Using find_system without the 'Variants' argument skips inactive Variant Subsystem blocks in the search. This behavior will change in a future release to look at all
 choices of the Variant Subsystem. To find blocks that are active in simulation or code generation, compile the model and use the built-in variant filters with the 'MatchFilter'
 option. To find all blocks use filter '@Simulink.match.allVariants' with the 'MatchFilter' option.] 
 [> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('inputOrCustomCallback', 'C:\Users\nga20\eWave code\Noe 3 branch\WEC-Sim-main\source\functions\simulink\mask\inputOrCustomCallback.m', 31)" style="font-weight:bold">inputOrCustomCallback</a> (<a href="matlab: opentoline('C:\Users\nga20\eWave code\Noe 3 branch\WEC-Sim-main\source\functions\simulink\mask\inputOrCustomCallback.m',31,0)">line 31</a>)
-In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\nga20\eWave code\Noe 3 branch\WEC-Sim-main\source\wecSim.m', 44)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\nga20\eWave code\Noe 3 branch\WEC-Sim-main\source\wecSim.m',44,0)">line 44</a>)
-In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('MCR_K_prop', 'C:\Users\nga20\eWave code\Noe 3 branch\MCR_K_prop.m', 8)" style="font-weight:bold">MCR_K_prop</a> (<a href="matlab: opentoline('C:\Users\nga20\eWave code\Noe 3 branch\MCR_K_prop.m',8,0)">line 8</a>)] 
-Elapsed time is 11.788550 seconds.
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\nga20\eWave code\Noe 3 branch\WEC-Sim-main\source\wecSim.m', 44)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\nga20\eWave code\Noe 3 branch\WEC-Sim-main\source\wecSim.m',44,0)">line 44</a>)] 
+Elapsed time is 52.085549 seconds.
 
 Post-processing and saving...   
 
-Simulation for Sea State 7, run with a Resistive(100) controller,
-Extracted Energy:  0.63 [J] with mean power 20.67 [mW].
-
-EC =  7.38 with a mean power 20.67.
-Elapsed time is 0.287049 seconds.
+Simulation for Sea State 7, run with a NMPC controller,
+Extracted Energy: 112.38 [J] with mean power -435.52 [mW].
+Elapsed time is 0.418648 seconds.

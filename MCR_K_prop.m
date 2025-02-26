@@ -3,9 +3,9 @@ gain = [];
 Energy_e = [];
 
 
-for i = 0:1:100
+for i = 0:0.1:42
     prop_gain = i;
-    wecSim;
+    wecSim;++
     Ener = Output_energy.signals.values(end);
 
     gain = [gain, prop_gain];
