@@ -9,7 +9,7 @@ switch(SeaState)
     case 4 ;        Hm0=0.0208;        Tp=0.988;        gamma=3.3;
     case 5 ;        Hm0=0.0625;        Tp=1.412;        gamma=3.3;
     case 6 ;        Hm0=0.1042;        Tp=1.836;        gamma=3.3;
-    case 7 ;        Hm0=0.05;          Tp=2.5;          gamma=3.3;
+    case 7 ;        Hm0=0.0500;        Tp=2.500;        gamma=3.3;
 end
 
 %% Simulation Class
@@ -20,11 +20,11 @@ simu = simulationClass();                           % Create the Simulation Vari
     switch(SeaState)
         case { 1, 4 };        simu.endTime        = 100 + simu.rampTime;
         case { 2, 5 };        simu.endTime        = 150 + simu.rampTime;
-        case { 3, 6 };        simu.endTime        = 200 + simu.rampTime;
+        case { 3, 6 };        simu.endTime        = 185 + simu.rampTime;
         case { 7 };           simu.endTime        = 250 + simu.rampTime;
     end
     simu.cicEndTime     = 2;                        % Convolution Time [s]
-    simu.explorer       = 'on';                    % Explorer on
+    simu.explorer       = 'off';                    % Explorer on
     simu.solver         = 'ode8';                   % Turn on ode45
     simu.domainSize     = 5;
     simu.stateSpace 	= 1;                        % Simulate Impulse Response Function with State Space Approximation

@@ -48,7 +48,7 @@ fprintf('\nSimulation for Sea State %d, run with a %s controller,\nExtracted Ene
 fig1    = figure('Name','Energy extracted using different control strategies','Units','Normalized','OuterPosition',[0 0 1 1],'DefaultAxesFontSize',18);
 fig2    = figure('Name','Control Input and Power','Units','Normalized','OuterPosition',[0 0 1 1],'DefaultAxesFontSize',14);
 
-% Energy
+%%% Energy
 figure(fig1)
     lyl = 0;      %lower y limit
     uyl = 1.10*energy_gen(end);      %upper y limit
@@ -65,7 +65,7 @@ figure(fig1)
     txt1 = ['Mean Power NMPC = ', mp_s, ' [w]'];
     text(40,(uyl-10),txt1,'Color','blue','FontSize',18,'EdgeColor', 'blue','LineWidth',2, 'Margin', 10);
 
-% Control and instantaneous power
+%%% Control and instantaneous power
 tL = tiledlayout(fig2,2,1,'TileSpacing','compact');
 nexttile(tL,1)
     stairs( t, u,'-b','LineWidth',1); hold on; grid on; 

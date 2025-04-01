@@ -1,0 +1,11 @@
+*.out
+*.pdf
+*.toc
+*.aux
+*.out
+*.fls
+*.log
+*.blg
+*.fdb_latexmk
+*.bbl
+*-eps-converted-to.pdf

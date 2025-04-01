@@ -5,10 +5,10 @@ Version: 6.1
 
 Initializing the Simulation Class...
 	Case Dir: C:\Users\jguerrero\Documents\GitHub\eWave_2.0 
-Elapsed time is 0.176769 seconds.
+Elapsed time is 0.429717 seconds.
 
 WEC-Sim Pre-processing ...   
-Elapsed time is 6.406494 seconds.
+Elapsed time is 6.516433 seconds.
 
 WEC-Sim Simulation Settings:
 	Start Time                     (sec) = 0
@@ -79,31 +79,19 @@ List of Constraint(s): Number of Constraints = 5
 
 
 Simulating the WEC device defined in the SimMechanics model C:\Users\jguerrero\Documents\GitHub\eWave_2.0\WaveStar.slx...   
-Elapsed time is 0.797715 seconds.
-[Warning: Using find_system
-without the 'Variants'
-argument skips inactive
-Variant Subsystem blocks in
-the search. This behavior will
-change in a future release to
-look at all choices of the
-Variant Subsystem. To find
-blocks that are active in
-simulation or code generation,
-compile the model and use the
-built-in variant filters with
-the 'MatchFilter' option. To
-find all blocks use filter
-'@Simulink.match.allVariants'
-with the 'MatchFilter' option.] 
+Elapsed time is 13.820976 seconds.
+[Warning: Using find_system without the 'Variants' argument skips inactive Variant Subsystem blocks in the search. This
+behavior will change in a future release to look at all choices of the Variant Subsystem. To find blocks that are
+active in simulation or code generation, compile the model and use the built-in variant filters with the 'MatchFilter'
+option. To find all blocks use filter '@Simulink.match.allVariants' with the 'MatchFilter' option.] 
 [> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('inputOrCustomCallback', 'C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\functions\simulink\mask\inputOrCustomCallback.m', 31)" style="font-weight:bold">inputOrCustomCallback</a> (<a href="matlab: opentoline('C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\functions\simulink\mask\inputOrCustomCallback.m',31,0)">line 31</a>)
 In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\wecSim.m', 43)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\jguerrero\Documents\GitHub\WEC-Sim\source\wecSim.m',43,0)">line 43</a>)] 
-Elapsed time is 1249.344053 seconds.
+Elapsed time is 506.902110 seconds.
 
 Post-processing and saving...   
 
-Simulation for Sea State 7, run with a Resistive(19.4) controller,
-Extracted Energy: 16.67 [J] with mean power 65.24 [mW].
+Simulation for Sea State 7, run with a NMPC controller,
+Extracted Energy: 23.87 [J] with mean power 94.00 [mW].
 
-EC = 29.60 with a mean power 65.24.
-Elapsed time is 37.933423 seconds.
+EC = 38.47 with a mean power 94.00.
+Elapsed time is 10.175270 seconds.
