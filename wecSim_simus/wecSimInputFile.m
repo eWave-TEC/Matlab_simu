@@ -1,7 +1,7 @@
 %% WECCCOMP model of WaveStar device with WAMIT data 
 % https://github.com/WEC-Sim/WECCCOMP
 %Select the Sea State to simulate
-SeaState = 7;
+SeaState = 6;
 switch(SeaState)
     case 1 ;        Hm0=0.0208;        Tp=0.988;        gamma=1.0;
     case 2 ;        Hm0=0.0625;        Tp=1.412;        gamma=1.0;
